@@ -1,0 +1,83 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121214;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* WELCOME centrado arriba */
+h1 {
+  font-size: 3.5rem;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Let's file debajo, resaltado */
+p {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #9ecfff;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Contenedor botones debajo de lets file, simétricos */
+main {
+  margin-top: 40px;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Botones */
+button {
+  width: 150px;
+  padding: 18px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  user-select: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Upload y Download - mismo color base azul */
+#UpButton,
+#DownButton {
+  background-color: #0057e7;
+}
+
+#UpButton:hover,
+#DownButton:hover {
+  animation: colorShiftUp 1s forwards;
+}
+
+/* Animación hover: cambio de color dinámico azul */
+@keyframes colorShiftUp {
+  0% {
+    background-color: #0057e7;
+  }
+  50% {
+    background-color: #377fff;
+  }
+  100% {
+    background-color: #377fff;
+  }
+}

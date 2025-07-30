@@ -1,0 +1,130 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121214;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #9ecfff;
+  font-weight: 600;
+  text-align: center;
+}
+
+main {
+  margin-top: 40px;
+  width: 320px;
+}
+
+/* Lista de archivos */
+#fileList {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+#fileList li {
+  background-color: #222;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9ecfff;
+  font-size: 1.1rem;
+}
+
+/* Botón descargar */
+.downloadBtn {
+  background-color: #0057e7;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.4s ease;
+}
+
+.downloadBtn:hover {
+  background-color: #377fff;
+}
+
+/* Mensaje cuando no hay archivos */
+#noFilesMessage {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Botón volver */
+#backContainer {
+  margin-top: 30px;
+  width: 320px;
+  text-align: center;
+}
+
+#backButton {
+  width: 150px;
+  padding: 15px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #0057e7;
+  color: white;
+  user-select: none;
+  transition: background-color 0.4s ease;
+}
+
+#backButton:hover {
+  background-color: #377fff;
+}
+
+/* Clase ocultar */
+.hidden {
+  display: none;
+}
+/* Logo casa más grande y esquinalo a la izquierda */
+.logo-link {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #377fff;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  z-index: 1000;
+}
+
+.logo-link:hover {
+  color: #0057e7;
+}

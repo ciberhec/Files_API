@@ -1,0 +1,142 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121214;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #9ecfff;
+  font-weight: 600;
+  text-align: center;
+}
+
+main {
+  margin-top: 40px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón para seleccionar archivo */
+.custom-file-upload {
+  background-color: #0057e7;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #377fff;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#fileInfo {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 24px;
+  color: #9ecfff;
+}
+
+#acceptContainer,
+#uploadControls,
+#successContainer {
+  margin-top: 20px;
+  width: 320px;
+  text-align: center;
+}
+
+/* Botones */
+button {
+  width: 150px;
+  padding: 15px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #0057e7;
+  color: white;
+  user-select: none;
+  transition: background-color 0.4s ease;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #377fff;
+}
+
+/* Controles de upload (barra y botón cancelar) */
+#uploadControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#progressContainer {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  width: 200px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background-color: #377fff;
+  transition: width 0.3s;
+}
+
+/* Clases de utilidad */
+.hidden {
+  display: none;
+}
+/* Logo casa más grande y esquinalo a la izquierda */
+.logo-link {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #377fff;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  z-index: 1000;
+}
+
+.logo-link:hover {
+  color: #0057e7;
+}

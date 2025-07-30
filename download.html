@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download Files</title>
+  <link rel="stylesheet" href="style-download.css" />
+</head>
+<body>
+  <a href="index.html" class="logo-link" aria-label="Go to Welcome">
+  <!-- Puedes usar texto o emoji, o insertar una imagen dentro -->
+  🏠
+  </a>  
+  <h1>Download</h1>
+  <p>Selecciona un archivo del historial para descargar</p>
+
+  <main>
+    <ul id="fileList">
+      <!-- Aquí se listarán los archivos disponibles -->
+      <!-- Ejemplo:
+      <li>
+        archivo1.pdf
+        <button class="downloadBtn">Descargar</button>
+      </li>
+      -->
+    </ul>
+  </main>
+
+  <div id="noFilesMessage" class="hidden">
+    <p>No hay archivos disponibles para descargar.</p>
+  </div>
+
+  <div id="backContainer">
+    <button id="backButton">Records</button>
+  </div>
+
+  <script src="download.js"></script>
+</body>
+</html>

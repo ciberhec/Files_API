@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>File Storage</title>
+  <link rel="stylesheet" href="style-storage.css" />
+</head>
+<body>
+  <!-- Botón Home -->
+  <a href="index.html" class="logo-link" aria-label="Go to Welcome">
+    🏠
+  </a>
+
+  <h1>Your Files</h1>
+
+  <!-- Barra de búsqueda -->
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Buscar archivo..." />
+
+    <!-- Filtros -->
+    <select id="nameFilter">
+      <option value="default">Ordenar por nombre</option>
+      <option value="asc">Nombre A-Z</option>
+      <option value="desc">Nombre Z-A</option>
+    </select>
+
+    <select id="dateFilter">
+      <option value="default">Ordenar por fecha</option>
+      <option value="newest">Más recientes</option>
+      <option value="oldest">Más antiguos</option>
+    </select>
+  </div>
+
+  <!-- Tabla de archivos -->
+  <table id="fileTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Fecha</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>informe.pdf</td>
+        <td>PDF</td>
+        <td>2025-07-22</td>
+        <td><button class="download-btn">Descargar</button></td>
+      </tr>
+      <tr>
+        <td>foto.png</td>
+        <td>Imagen</td>
+        <td>2025-07-20</td>
+        <td><button class="download-btn">Descargar</button></td>
+      </tr>
+      <tr>
+        <td>presentacion.pptx</td>
+        <td>PPT</td>
+        <td>2025-07-18</td>
+        <td><button class="download-btn">Descargar</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="storage.js"></script>
+</body>
+</html>

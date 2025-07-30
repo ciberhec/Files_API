@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upload File</title>
+  <link rel="stylesheet" href="style-upload.css" />
+</head>
+<body>
+  <a href="index.html" class="logo-link" aria-label="Go to Welcome">
+  <!-- Puedes usar texto o emoji, o insertar una imagen dentro -->
+  🏠
+  </a>    
+  <h1>Upload</h1>
+  <p>Select file from your device</p>
+
+  <main>
+    <label class="custom-file-upload">
+      Seleccionar archivo
+      <input type="file" id="fileInput" />
+    </label>
+  </main>
+
+  <div id="fileInfo"></div>
+
+  <div id="acceptContainer" class="hidden">
+    <button id="acceptButton">Accept</button>
+  </div>
+
+  <div id="uploadControls" class="hidden">
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+    </div>
+    <button id="cancelButton">Cancelar</button>
+  </div>
+
+  <div id="successContainer" class="hidden">
+    <p>Archivo subido con éxito ✅</p>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>
